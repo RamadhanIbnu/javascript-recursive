@@ -34,19 +34,19 @@ alert("hasil dari faktorial " + nilai + " adalah " + faktorial(nilai));
 
 // Jika diberi argumen angka 5, maka hasilnya adalah 0 2 4
 
-function deretGenap(n){
-    if (n <= 0){
-        return 0
-    }
-        else{
-         return n 
-        }
-        
-        
-        
+function deretGenap(n) {
+  if (n < 0) {
+    console.log(0);
+  } else if (n % 2 == 0) {
+    deretGenap(n - 2);
+    console.log(n);
+  } else {
+    deretGenap(n - 2);
+    console.log(n - 1);
+  }
 }
 
-console.log(deretGenap(5))
+deretGenap(5);
 
 
 
@@ -65,3 +65,12 @@ console.log(deretGenap(5))
 
 // f(n) = ...
 
+function f(x) {
+    if (x == 1) {
+      return 3;
+    } else {
+      return 2 * f(x - 1);
+    }
+  }
+
+console.log(f(2))
