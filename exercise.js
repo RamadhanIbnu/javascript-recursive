@@ -46,7 +46,7 @@ function deretGenap(n) {
   }
 }
 
-deretGenap(5);
+alert(deretGenap(5));
 
 
 
